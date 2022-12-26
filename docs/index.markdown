@@ -1,6 +1,3 @@
-# OpenCloudTiles
-
-powered by the community™
 
 # Stack
 
@@ -18,8 +15,8 @@ powered by the community™
 
 ## cloud converter
 
-- [x] works: [github.com/OpenCloudTiles/opencloudtiles-converter](https://github.com/OpenCloudTiles/opencloudtiles-converter)
-- [x] implements a [cloudtiles format](https://github.com/OpenCloudTiles/opencloudtiles-converter/blob/main/readme.md), similar to [PMTiles](https://github.com/protomaps/PMTiles)
+- [x] already works: [github.com/OpenCloudTiles/opencloudtiles-converter](https://github.com/OpenCloudTiles/opencloudtiles-converter)
+- [x] implements the new [cloudtiles format](https://github.com/OpenCloudTiles/opencloudtiles-converter/blob/main/readme.md), similar to [PMTiles](https://github.com/protomaps/PMTiles)
 
 ## cloud server
 
