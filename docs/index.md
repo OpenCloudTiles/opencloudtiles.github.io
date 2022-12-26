@@ -1,3 +1,7 @@
+# OpenMapTiles
+
+powered by the community™
+
 # Stack
 
 <p align="center"><img src="assets/stack.svg?raw=true"></p>
@@ -37,5 +41,3 @@
 
 - based on [MapLibre](https://github.com/maplibre/maplibre-gl-js)
 - add multiple shortbread styles
-
-
