@@ -1,5 +1,12 @@
-<% var title='' ; if (page.category) title=page.category; if (page.tag) title=page.tag; if (page.archive){ if
-	(page.year) title=page.year + (page.month ? '/' + page.month : '' ); else title=__('archive_a'); } %>
+<%
+	let title='';
+	if (page.category) title=page.category;
+	if (page.tag) title=page.tag;
+	if (page.archive){
+		if (page.year) title=page.year + (page.month ? '/' + page.month : '' );
+		else title=__('archive_a');
+	}
+%>
 
 <article>
 

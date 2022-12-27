@@ -1,36 +1,34 @@
 
 <% if(page.headerImg) { %>
-    <header class="header-container" style="background-image: url(<%- page.headerImg %>);">
+<header class="header-container" style="background-image: url(<%- page.headerImg %>);">
 <% } else if(config.configimg) { %>
-    <header class="header-container" style="background-image: url(<%- config.configimg %>);">
+<header class="header-container" style="background-image: url(<%- config.configimg %>);">
 <% } else { %>
-    <header class="header-container" style="background-image: url('/images/blog-bg2.jpg');">
+<header class="header-container" style="background-image: url('/images/blog-bg2.jpg');">
 <% } %>
 
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header page-scroll">
-          <button type="button" id="tglBtn" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/"><%= config.title %></a>
-        </div>
-        <div id="bosenyblog-navbar">
-          <div class="navbar-collapse" id="bs-example-navbar-collapse-6">
-            <ul class="nav navbar-nav navbar-right">
-            <% for (var i in theme.menu){ %>
-              <li><a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a></li>
-            <% } %>
-            </ul>
-          </div>
-        </div>
-
-    </div>
- </nav>
- <div class="gotop-btn">
-
- </div>
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header page-scroll">
+				<button type="button" id="tglBtn" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><%= config.title %></a>
+			</div>
+			<div id="bosenyblog-navbar">
+				<div class="navbar-collapse" id="bs-example-navbar-collapse-6">
+					<ul class="nav navbar-nav navbar-right">
+					<% for (var i in theme.menu){ %>
+						<li><a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a></li>
+					<% } %>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="gotop-btn">
+	</div>
 </header>

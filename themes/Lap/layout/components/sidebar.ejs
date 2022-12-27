@@ -1,43 +1,35 @@
 <div class="sidebar-container">
 
-<% if (theme.search){ %>
+	<% if (theme.categories){ %>
+		<div class="categories-container" style="margin-top:40px;">
+			<p>categories:</p>
+			<% site.categories.sort('name').map(function(category){  %>
+				<a href="<%= url_for(category.path) %>" title="<%= category.name %>" rel="<%= category.length %>"><%= category.name %></a>
+			<% }) %>
+		</div>
+	<% } %>
 
-<div class="search-container">
-<form class="site-search-form">
-    <span class="glyphicon glyphicon-search"></span><input type="text" id="local-search-input" class="st-search-input" placeholder="Search..." />
-</form>
-<div id="local-search-result" class="local-search-result-cls"></div>
-</div>
-<script type="text/javascript" id="local.search.active">
-var inputArea       = document.querySelector("#local-search-input");
-inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
-inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
-</script>
-<% } %>
-
-
-<% if (theme.categories){ %>
-    <div class="categories-container" style="margin-top:40px;">
-        <p>categories:</p>
-            <% site.categories.sort('name').map(function(category){  %>
-                <a href="<%= url_for(category.path) %>" title="<%= category.name %>" rel="<%= category.length %>"><%= category.name %></a>
-            <% }) %>
-    </div>
-
-<% } %>
-
-<% if (theme.links){ %>
-    <div class="social-container" style="margin-top:40px;">
-        <p>Links:</p>
-            <% for (var i in theme.social){ %>
-                <% if(theme.social[i].key == "zhihu") { %>
-                    <li class="social-item"><i class=" fa fa-fw zhihu-icon"></i><a href="<%- theme.social[i].link %>"><%= __(i) %></a></li>
-                <%} else if(theme.social[i].key == "lofter") { %>
-                    <li class="social-item"><i class=" fa fa-fw lofter-icon"></i><a href="<%- theme.social[i].link %>"><%= __(i) %></a></li>
-                <%}else {%>
-                    <li class="social-item"><i class="fa fa-fw fa-<%= theme.social[i].key  %>"></i><a href="<%- theme.social[i].link %>"><%= __(i) %></a></li>
-                <%}%>
-            <% } %>
-    </div>
-<% } %>
+	<% if (theme.links){ %>
+		<div class="social-container" style="margin-top:40px;">
+			<p>Links:</p>
+			<% for (var i in theme.social){ %>
+				<% if(theme.social[i].key == "zhihu") { %>
+					<li class="social-item">
+						<i class=" fa fa-fw zhihu-icon"></i>
+						<a href="<%- theme.social[i].link %>"><%= __(i) %></a>
+					</li>
+				<%} else if(theme.social[i].key == "lofter") { %>
+					<li class="social-item">
+						<i class=" fa fa-fw lofter-icon"></i>
+						<a href="<%- theme.social[i].link %>"><%= __(i) %></a>
+					</li>
+				<%}else {%>
+					<li class="social-item">
+						<i class="fa fa-fw fa-<%= theme.social[i].key  %>"></i>
+						<a href="<%- theme.social[i].link %>"><%= __(i) %></a>
+					</li>
+				<%}%>
+			<% } %>
+		</div>
+	<% } %>
 </div>
