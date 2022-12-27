@@ -1,3 +1,9 @@
 
-*.svg.bkp
-*.svg.dtmp
+_multiconfig.yml
+.deploy*/
+.DS_Store
+*.log
+db.json
+node_modules/
+public/
+Thumbs.db

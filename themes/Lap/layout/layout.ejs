@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<%- partial('components/head') %>
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <%- partial('components/header') %>
+
+        <% if (is_home()){ %>
+        <div class="container ">
+          <div class="row">
+            <main class="site-main posts-loop    col-lg-8 col-lg-offset-1
+                    col-md-8 col-md-offset-1
+                    col-sm-12
+                    col-xs-12">
+            <%- body %>
+            </main>
+            <div class="sidebar
+                    col-lg-3 col-lg-offset-0
+                    col-md-3 col-md-offset-0
+                    col-sm-12
+                    col-xs-12
+                    sidebar-container
+                ">
+
+                <%- partial('components/sidebar') %>
+            </div>
+          </div>
+        </div>
+        <% } else { %>
+          <div class="container ">
+          <div class="row">
+            <main class="site-main posts-loop col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container" style="position: inherit;">
+            <%- body %>
+            </main>
+          </div>
+        </div>
+       <% } %>
+    <%- partial('components/footer') %>
+
+  </div>
+
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="<%- config.root %>js/index.js"></script>
+
+</body>
+</html>

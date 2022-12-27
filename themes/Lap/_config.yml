@@ -1,0 +1,29 @@
+menu:
+  Home: /
+  About: /about
+  # Categories: /categories
+
+
+# Social links
+social:
+  GitHub:
+    key: github
+    link: https://github.com/OpenCloudTiles
+
+toc:
+  enable: true
+
+# anchorjs
+anchorjs: true
+
+# sidebar search
+search: true
+# sidebar categories
+categories: true
+# sidebar links
+links: true
+
+draw: false
+draw_maxNum: 10
+draw_iconText: ❤
+draw_color: red

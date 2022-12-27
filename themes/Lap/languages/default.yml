@@ -1,0 +1,32 @@
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Recent Posts
+read_btn: more
+
+Home: Home
+Archives: Archives
+Categories: Categories
+Tags: Tags
+About: About
+Links: Links
+RSS: RSS
+
+counter:
+  tag_cloud:
+    zero: No tags
+    one: 1 tag in total
+    other: "<em style='color: red;'>%d</em>  tags in total"
+
+  categories:
+    zero: No categories
+    one: 1 category in total
+    other: "<em style='color: red;'>%d</em> categories in total"
+
+  archive_posts:
+    zero: No posts.
+    one: 1 post.
+    other: "<em style='color: red;'>%d</em>  posts in total."

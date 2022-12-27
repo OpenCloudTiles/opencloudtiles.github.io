@@ -1,7 +1,10 @@
+---
+title: Hello World
+---
 
 # Stack
 
-<p align="center"><img src="assets/stack.svg?raw=true"></p>
+<p align="center"><img src="assets/stack.svg"></p>
 
 ## vector tile generator
 
@@ -40,3 +43,52 @@
 
 - based on [MapLibre](https://github.com/maplibre/maplibre-gl-js)
 - add multiple shortbread styles
+
+
+<table style="width:100%">
+  <tr>
+    <td class="center">component</td>
+    <td>status</td>
+    <td>description</td>
+  </tr>
+  <tr>
+    <td class="center">OSM</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">tile generator</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">*.mbtiles</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">tiles converter</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">*.cloudtiles</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">tiles server</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">CDN</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="center">frontend</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
