@@ -10,7 +10,7 @@ article.archive {
   font-size: 2.1em;
   line-height: 1;
   position: relative;
-  color: #212121;
+  color: $titleColor;
   margin: 0;
 }
 .archive-post .archive-title a {
@@ -25,7 +25,7 @@ article.archive {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 .archive-post .archive-title a:hover {
-  color: #212121;
+  color: $titleColor;
   text-decoration: none;
 }
 .archive-post .archive-title a:hover span {
@@ -36,11 +36,11 @@ article.archive {
 }
 .archive-post time a {
   font-size: 1.6rem;
-  color: #9e9e9e;
+  color: $gray;
 }
 .archive-post time a:before {
   content: '#';
 }
 .archive-post time a:hover {
-  color: #f03838;
+  color: $accentColor1;
 }

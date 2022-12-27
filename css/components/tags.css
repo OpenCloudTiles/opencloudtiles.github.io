@@ -34,20 +34,20 @@ article .archive-tags,
 article .tags-cloud {
   margin: 8rem 0;
   font-size: 1.3rem;
-  color: #9e9e9e;
+  color: $gray;
 }
 article .archive-tags a,
 article .tags-cloud a {
-  color: #9e9e9e;
+  color: $gray;
 }
 article .archive-tags a:hover,
 article .tags-cloud a:hover {
-  color: #f03838;
+  color: $hackerRed;
 }
 article .archive-tags i,
 article .tags-cloud i {
   vertical-align: middle;
-  color: #9e9e9e;
+  color: $gray;
   margin-right: 0.5rem;
 }
 article .archive-tags .post-tags,

@@ -32,10 +32,10 @@
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: color-link;
+  color: $textColor;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: color-link;
+  color: $textColor;
 }
 figure.highlight {
   border: 1px solid color-border;

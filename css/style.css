@@ -61,12 +61,15 @@ header .navbar-custom {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
+header .navbar {
+  backdrop-filter: blur(10px);
+}
 header .navbar-brand {
   color: #fff !important;
   padding: 20px;
-  text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
+  font-size: 30px;
 }
 header .navbar-brand:hover {
   opacity: 0.8;
@@ -168,7 +171,9 @@ article {
   padding: 8rem 0;
 }
 article a {
-  color: #f03838;
+  color: #424242;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
 }
 article:not(:first-child):before {
   content: '';
@@ -195,7 +200,8 @@ article .article-read {
   margin: 0 auto;
   margin-top: 10px;
 }
-article .article-read:hover a {
+article .article-read:hover {
+a
   text-decoration: none;
 }
 article .article-title {
@@ -225,7 +231,7 @@ article .article-title a:hover span {
 }
 article .article-top-meta {
   position: relative;
-  color: #9e9e9e;
+  color: $hackerGray;
   font-size: 1.3rem;
   text-align: center;
   margin: 1rem 0;
@@ -234,7 +240,7 @@ article .article-top-meta span {
   margin: 0 0.5rem;
 }
 article .article-top-meta a {
-  color: #9e9e9e;
+  color: $hackerGray;
 }
 article .article-top-meta a:hover {
   color: #f03838;
@@ -279,17 +285,17 @@ article .article-footer .article-meta > span > span {
 }
 article .article-footer .article-meta {
   font-size: 1.3rem;
-  color: #9e9e9e;
+  color: $hackerGray;
 }
 article .article-footer .article-meta a {
-  color: #9e9e9e;
+  color: $hackerGray;
 }
 article .article-footer .article-meta a:hover {
   color: #f03838;
 }
 article .article-footer .article-meta i {
   vertical-align: middle;
-  color: #9e9e9e;
+  color: $hackerGray;
   margin-right: 0.5rem;
 }
 article .article-footer .post-tags a:before {
@@ -464,7 +470,7 @@ article .tags-cloud a {
 }
 article .archive-tags a:hover,
 article .tags-cloud a:hover {
-  color: #f03838;
+  color: $hackerRed;
 }
 article .archive-tags i,
 article .tags-cloud i {
@@ -525,7 +531,7 @@ article .categories-cloud {
 }
 article .archive-categories a,
 article .categories-cloud a {
-  color: #9e9e9e;
+  color: $hackerGray;
 }
 article .archive-categories a:hover,
 article .categories-cloud a:hover {
@@ -656,10 +662,10 @@ footer.site-footer .site-info {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: color-link;
+  color: #424242;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: color-link;
+  color: #424242;
 }
 figure.highlight {
   border: 1px solid color-border;
@@ -947,144 +953,6 @@ pre .params {
     transition: all 200ms cubic-bezier(0.47, 0, 0.4, 0.99) 0ms;
   }
 }
-.local-search {
-  position: relative;
-  text-align: left;
-  margin-bottom: 10px;
-}
-.local-search-input-cls {
-  width: 200px;
-  margin: 10px 0;
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  color: #666;
-  font-size: 14px;
-}
-#local-search-input {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: 0 0;
-  font-size: inherit;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #000;
-  outline: 0;
-  -webkit-appearance: none;
-  margin-left: 10px;
-}
-#local-search-close {
-  content: 'x';
-  position: absolute;
-  right: 10px;
-  top: -15px;
-  background: #fff;
-  color: #888;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 16px;
-  font-family: consolas;
-  border: 1px solid #ccc;
-  display: block;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: normal;
-  transform: rotateZ(0);
-  transition: all 0.3s;
-}
-#local-search-close:hover {
-  border-color: #666;
-  color: #222;
-  transform: rotateZ(180deg);
-  transition: all 0.3s;
-}
-.site-search-form {
-  padding-left: 6px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #999;
-}
-.local-search-result-cls {
-  position: absolute;
-  z-index: 99;
-  width: 400px;
-  top: 50px;
-  right: 0;
-}
-.local-search-result-cls .local-search-empty {
-  color: #888;
-  line-height: 44px;
-  text-align: center;
-  display: block;
-  font-size: 16px;
-  font-weight: normal;
-}
-.local-search-result-cls ul {
-  border-radius: 6px;
-  width: 360px;
-  max-height: 450px;
-  min-height: 0;
-  height: auto;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  background: #fff;
-  box-shadow: 1px 2px 4px #ccc;
-}
-.local-search-result-cls ul li {
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  line-height: 30px;
-  font-weight: normal;
-}
-.local-search-result-cls ul li:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-.local-search-result-cls ul li a {
-  margin-top: 20px;
-  font-size: 16px;
-}
-.local-search-result-cls ul li p {
-  margin-top: 10px;
-  font-size: 14px;
-  max-height: 124px;
-  overflow: hidden;
-}
-.local-search-result-cls ul li em.search-keyword {
-  color: #e58c7c;
-}
-.local-search-result-cls .search-result-list::-webkit-scrollbar {
-  width: 10px;
-}
-.local-search-result-cls .search-result-list::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: #eee;
-}
-.local-search-result-cls .search-result-list::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: #3db6a4;
-  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
-}
-.local-search-plugin .local-search-input-cls {
-  opacity: 0.6;
-  width: 160px;
-  transition: all 0.3s;
-}
-.local-search-plugin .local-search-input-cls:hover {
-  opacity: 1;
-  width: 200px;
-  transition: all 0.3s;
-}
-.local-search-plugin .icon {
-  position: relative;
-  left: -30px;
-  color: #999;
-  cursor: pointer;
-}
 .sidebar-container .categories-container {
   padding: 10px;
 }
@@ -1124,24 +992,10 @@ pre .params {
 .sidebar-container .social-container .fa {
   text-align: left;
 }
-.sidebar-container .social-container .zhihu-icon {
-  height: 14px;
-  width: 18px;
-  background-image: url("/images/zhihu0.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.sidebar-container .social-container .lofter-icon {
-  height: 14px;
-  width: 18px;
-  background-image: url("/images/lofter.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 #toc {
   float: right;
   font-size: 0.8em;
-  color: color-link;
+  color: #424242;
   margin: 5px;
   position: absolute;
   right: 3%;
@@ -1165,7 +1019,7 @@ pre .params {
 }
 #toc .toc-item a,
 #toc .toc-link a {
-  color: #337ab7;
+  color: #424242;
   padding-left: 0px;
   max-width: 150px;
   display: inline-block;

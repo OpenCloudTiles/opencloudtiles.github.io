@@ -1,7 +1,7 @@
 #toc {
   float: right;
   font-size: 0.8em;
-  color: color-link;
+  color: $textColor;
   margin: 5px;
   position: absolute;
   right: 3%;
@@ -25,7 +25,7 @@
 }
 #toc .toc-item a,
 #toc .toc-link a {
-  color: #337ab7;
+  color: $textColor;
   padding-left: 0px;
   max-width: 150px;
   display: inline-block;
@@ -38,7 +38,7 @@
 }
 #toc .toc-item a:hover,
 #toc .toc-link a:hover {
-  color: #f03838;
+  color: $accentColor1;
 }
 #toc ol {
   margin: 0;

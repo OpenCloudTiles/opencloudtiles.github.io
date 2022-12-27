@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+<head >
+	<meta charset="utf-8">
+	
+	<title>Documentation | OpenCloudTiles | powered by the community™</title>
+
+	
+	<meta name="author" content="OpenCloudTiles">
+	
+
+	
+	<meta name="description" content=".chart-block {
+        text-align: center;
+        width: 140px;
+        position: relative;
+    }
+    .chart-block svg {
+        position: absolute;
+">
+	
+
+	
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta property="og:title" content="Documentation"/>
+
+	<meta property="og:site_name" content="OpenCloudTiles"/>
+
+	
+	<meta property="og:image" content="/favicon.ico"/>
+	
+	<link href="/favicon.ico" rel="icon">
+
+	<link rel="alternate" href="/atom.xml" title="OpenCloudTiles" type="application/atom+xml">
+	<link rel="stylesheet" href="/css/base/bootstrap.min.css" media="screen" type="text/css">
+	<link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+	<div class="blog">
+		<div class="content">
+			
+
+<header class="header-container" style="background-image: url('/images/blog-bg.jpg');">
+
+
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header page-scroll">
+				<button type="button" id="tglBtn" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">OpenCloudTiles</a>
+			</div>
+			<div id="bosenyblog-navbar">
+				<div class="navbar-collapse" id="bs-example-navbar-collapse-6">
+					<ul class="nav navbar-nav navbar-right">
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/documentation">Documentation</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="gotop-btn">
+	</div>
+</header>
+				
+					<div class="container ">
+						<div class="row">
+							<main class="site-main posts-loop col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container" style="position: inherit;">
+								
+	<article class="article-container ">
+
+	
+		
+		<h3 class="article-title"><span>Documentation</span></h3>
+		
+	
+
+	<!--
+	<div class="article-top-meta">
+		<span class="posted-on">
+			<a href="/documentation.html" rel="bookmark">
+				<time class="entry-date published" datetime="2022-12-27T14:46:52.124Z">
+					//2022-12-27
+				</time>
+			</a>
+		</span>
+		<br />
+	</div>
+	-->
+
+	
+
+	<div class="article-content">
+		<div class="entry">
+			
+					<style>
+    .chart-block {
+        text-align: center;
+        width: 140px;
+        position: relative;
+    }
+    .chart-block svg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 120px;
+    }
+    .chart {
+        width:100%;
+    }
+    .chart td:first-child {
+        text-align: center;
+        vertical-align: middle;
+        width:130px;
+    }
+    .chart td:last-child {
+        border-top: 1px solid rgba(128,128,128,0.4);
+    }
+</style>
+
+<svg>
+    <symbol id="chart-block" viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice">
+        <g transform="translate(0, 500)">
+            <path d="M 60 -500 L 60 0" fill="none" stroke="#888" stroke-miterlimit="10" pointer-events="stroke"/>
+            <path d="M 60 -1 L 63.5 -8 L 60 -6.25 L 56.5 -8 Z" fill="#888" stroke="#888" stroke-miterlimit="10" pointer-events="all"/>
+            <path d="M 60 40 L 60 540" fill="none" stroke="#888" stroke-miterlimit="10" pointer-events="stroke"/>
+            <rect x="1" y="0" width="118" height="40" style="fill:rgba(255,0,0,0.2);stroke:#844; stroke-width:1px" pointer-events="all" />
+        </g>
+    </symbol>
+</svg>
+
+<table class="chart">
+<tr>
+<td class="chart-block">
+    <svg viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice" >
+        <use xlink:href="#chart-block" style="filter: hue-rotate(80deg);" />
+        <text x="60" y="520" text-anchor="middle" font-size="12">tile generator</text>
+        <text x="60" y="525" text-anchor="middle" dominant-baseline="hanging" font-size="8">80%</text>
+    </svg>
+</td>
+<td>
+
+<h2 id="vector-tile-generator"><a href="#vector-tile-generator" class="headerlink" title="vector tile generator"></a>vector tile generator</h2><ul>
+<li><input checked="" disabled="" type="checkbox"> converts OSM to *.mbtiles, done with <a target="_blank" rel="noopener" href="https://tilemaker.org/">tilemaker</a></li>
+<li><input disabled="" type="checkbox"> needs documentation</li>
+<li><input disabled="" type="checkbox"> migrate to <a href="%22https://shortbread.geofabrik.de">shortbread</a> scheme</li>
+</ul>
+<h2 id="image-tile-generator"><a href="#image-tile-generator" class="headerlink" title="image tile generator"></a>image tile generator</h2><p>Based on NASA, ESA on BKG (germany). Implemented sometime in 2023.</p>
+</td>
+</tr>
+
+<tr>
+<td>
+    *.mbtiles
+</td>
+<td>
+Necessary intermediate format, but is not suitable for a scalable cloud server infrastructure.
+</td>
+</tr>
+
+<tr>
+<td class="chart-block">
+    <svg viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice">
+        <use xlink:href="#chart-block" style="filter: hue-rotate(100deg);" />
+        <text x="60" y="520" text-anchor="middle" font-size="12">cloud tile converter</text>
+        <text x="60" y="525" text-anchor="middle" dominant-baseline="hanging" font-size="8">100%</text>
+    </svg>
+</td>
+<td>
+
+<h2 id="cloud-tile-converter"><a href="#cloud-tile-converter" class="headerlink" title="cloud tile converter"></a>cloud tile converter</h2><ul>
+<li><input checked="" disabled="" type="checkbox"> already works: <a target="_blank" rel="noopener" href="https://github.com/OpenCloudTiles/opencloudtiles-converter">code</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>*.cloudtiles</td>
+<td>
+
+<p>implements the new <a target="_blank" rel="noopener" href="https://github.com/OpenCloudTiles/opencloudtiles-converter/blob/main/readme.md">.cloudtiles format</a>, similar to <a target="_blank" rel="noopener" href="https://github.com/protomaps/PMTiles">PMTiles</a></p>
+</td>
+</tr>
+<tr>
+<td class="chart-block">
+    <svg viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice">
+        <use xlink:href="#chart-block" style="filter: hue-rotate(50deg);" />
+        <text x="60" y="520" text-anchor="middle" font-size="12">cloud tile server</text>
+        <text x="60" y="525" text-anchor="middle" dominant-baseline="hanging" font-size="8">50%</text>
+    </svg>
+</td>
+<td>
+
+<h2 id="cloud-server"><a href="#cloud-server" class="headerlink" title="cloud server"></a>cloud server</h2><ul>
+<li><input disabled="" type="checkbox"> will be added to: <a target="_blank" rel="noopener" href="https://github.com/OpenCloudTiles/opencloudtiles-converter">opencloudtiles-converter</a></li>
+<li><input disabled="" type="checkbox"> also a node.js implementation?</li>
+<li><input disabled="" type="checkbox"> A flexible CORS system to serve tiles, styles and glyphs under multiple domains.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="chart-block">
+    <svg viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice">
+        <use xlink:href="#chart-block" style="filter: hue-rotate(50deg);" />
+        <text x="60" y="520" text-anchor="middle" font-size="12">CDN</text>
+        <text x="60" y="525" text-anchor="middle" dominant-baseline="hanging" font-size="8">50%</text>
+    </svg>
+</td>
+<td>
+
+<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><ul>
+<li><input disabled="" type="checkbox"> add manuals and reference implementations for:<ul>
+<li><input disabled="" type="checkbox"> bunny.net</li>
+<li><input disabled="" type="checkbox"> Google Cloud</li>
+<li><input disabled="" type="checkbox"> Amazon</li>
+<li><input disabled="" type="checkbox"> CloudFlare</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> has to take care of:<ul>
+<li><input disabled="" type="checkbox"> CORS</li>
+<li><input disabled="" type="checkbox"> precompression</li>
+<li><input disabled="" type="checkbox"> styles+fonts</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="chart-block">
+    <svg viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice">
+        <use xlink:href="#chart-block" style="filter: hue-rotate(80deg);" />
+        <text x="60" y="520" text-anchor="middle" font-size="12">Frontend</text>
+        <text x="60" y="525" text-anchor="middle" dominant-baseline="hanging" font-size="8">80%</text>
+    </svg>
+</td>
+<td>
+
+<h2 id="frontend"><a href="#frontend" class="headerlink" title="frontend"></a>frontend</h2><ul>
+<li>based on <a target="_blank" rel="noopener" href="https://github.com/maplibre/maplibre-gl-js">MapLibre</a></li>
+<li>add multiple shortbread styles</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>User</td>
+<td>
+
+<p><code>sudo make user happy</code></p>
+</td>
+</tr>
+</table>
+			
+		</div>
+		
+	</div>
+
+	<div class="article-footer">
+		<div class="article-meta pull-left">
+
+		
+
+		
+
+		</div>
+
+		
+	</div>
+	
+		
+		
+	
+</article>
+   
+		<div id="toc" class="toc-article ">
+	<div class="toc-title">Content</div>
+	<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vector-tile-generator"><span class="toc-number">1.</span> <span class="toc-text">vector tile generator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#image-tile-generator"><span class="toc-number">2.</span> <span class="toc-text">image tile generator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cloud-tile-converter"><span class="toc-number">3.</span> <span class="toc-text">cloud tile converter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cloud-server"><span class="toc-number">4.</span> <span class="toc-text">cloud server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CDN"><span class="toc-number">5.</span> <span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#frontend"><span class="toc-number">6.</span> <span class="toc-text">frontend</span></a></li></ol>
+</div>
+
+
+
+
+
+							</main>
+						</div>
+					</div>
+				
+			<footer class="site-footer">
+	<p class="site-info">
+		Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+		Theme by <a href="https://github.com/BosenY/Lap" target="_blank">Lap</a>
+		</br>
+		
+			
+				&copy; 2022 OpenCloudTiles
+			
+		
+	</p>
+</footer>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="/js/index.js"></script>
+</body>
+</html>
