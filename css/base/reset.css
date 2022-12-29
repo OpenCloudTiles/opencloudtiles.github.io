@@ -21,22 +21,22 @@ p,
 blockquote,
 th,
 td {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background: #e8f0ff;
+	background: #e8f0ff;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 fieldset,
 img {
-    border: 0 none;
+	border: 0 none;
 }
 
 address,
@@ -48,23 +48,17 @@ em,
 strong,
 th,
 var {
-    font-style: normal;
-    font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
 }
 
 strong {
-    font-weight: 800;
-}
-
-ol,
-ul,
-li {
-    list-style: none outside none;
+	font-weight: 800;
 }
 
 caption,
 th {
-    text-align: left;
+	text-align: left;
 }
 
 h1,
@@ -73,6 +67,6 @@ h3,
 h4,
 h5,
 h6 {
-    /* font-size: 100%; */
-    /* font-weight: normal; */
+	/* font-size: 100%; */
+	/* font-weight: normal; */
 }

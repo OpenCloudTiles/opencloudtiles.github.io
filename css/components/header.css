@@ -9,6 +9,9 @@ header {
   margin-bottom: 20px;
   padding: 20px;
 }
+header .navbar-default .navbar-toggle {
+  margin-right: 8px;
+}
 header .navbar-default .navbar-toggle:focus,
 header .navbar-default .navbar-toggle:hover {
   background: 0 0 !important;
@@ -23,8 +26,6 @@ header .navbar-custom {
   z-index: 3;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
-}
-header .navbar {
   backdrop-filter: blur(10px);
 }
 header .navbar-brand {
@@ -128,4 +129,9 @@ header .gotop-btn:hover {
 }
 header .top-active {
   background-image: url("/images/top-active.png");
+}
+header ol,
+header ul,
+header li {
+  list-style: none outside none;
 }

@@ -46,6 +46,9 @@ header {
   margin-bottom: 20px;
   padding: 20px;
 }
+header .navbar-default .navbar-toggle {
+  margin-right: 8px;
+}
 header .navbar-default .navbar-toggle:focus,
 header .navbar-default .navbar-toggle:hover {
   background: 0 0 !important;
@@ -60,8 +63,6 @@ header .navbar-custom {
   z-index: 3;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
-}
-header .navbar {
   backdrop-filter: blur(10px);
 }
 header .navbar-brand {
@@ -165,6 +166,11 @@ header .gotop-btn:hover {
 }
 header .top-active {
   background-image: url("/images/top-active.png");
+}
+header ol,
+header ul,
+header li {
+  list-style: none outside none;
 }
 article {
   position: relative;
@@ -929,14 +935,13 @@ pre .params {
     width: 170px;
     float: right;
     position: absolute;
-    right: 50px;
+    right: 0px;
     box-shadow: rgba(0,0,0,0.118) 0 1px 6px, rgba(0,0,0,0.239) 0 1px 4px;
-    border-radius: 2px;
-    background: #fff;
-    color: #404040;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.8);
   }
   .nav li a {
-    color: #999 !important;
+    color: #777 !important;
   }
   .nav li a:hover {
     color: #000 !important;
@@ -1475,22 +1480,22 @@ p,
 blockquote,
 th,
 td {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background: #e8f0ff;
+	background: #e8f0ff;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 fieldset,
 img {
-    border: 0 none;
+	border: 0 none;
 }
 
 address,
@@ -1502,23 +1507,17 @@ em,
 strong,
 th,
 var {
-    font-style: normal;
-    font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
 }
 
 strong {
-    font-weight: 800;
-}
-
-ol,
-ul,
-li {
-    list-style: none outside none;
+	font-weight: 800;
 }
 
 caption,
 th {
-    text-align: left;
+	text-align: left;
 }
 
 h1,
@@ -1527,6 +1526,6 @@ h3,
 h4,
 h5,
 h6 {
-    /* font-size: 100%; */
-    /* font-weight: normal; */
+	/* font-size: 100%; */
+	/* font-weight: normal; */
 }
