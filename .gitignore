@@ -2,6 +2,7 @@
 _multiconfig.yml
 .deploy*/
 .DS_Store
+*.svg.bkp
 *.log
 db.json
 node_modules/

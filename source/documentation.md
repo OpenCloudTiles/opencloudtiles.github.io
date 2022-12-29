@@ -142,7 +142,7 @@ implements the new [.cloudtiles format](https://github.com/OpenCloudTiles/opencl
 <td class="chart-block">
 	<svg viewBox="0 0 120 1040" preserveAspectRatio="xMidYMid slice">
 		<use xlink:href="#chart-block" style="filter: hue-rotate(80deg);" />
-		<text x="60" y="520" text-anchor="middle" font-size="12">Frontend</text>
+		<text x="60" y="520" text-anchor="middle" font-size="12">frontend</text>
 		<text x="60" y="525" text-anchor="middle" dominant-baseline="hanging" font-size="8">80%</text>
 	</svg>
 </td>

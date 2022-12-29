@@ -11,6 +11,8 @@ header
 	background-size: cover
 	margin-bottom: 20px
 	padding: 20px
+	.navbar-default .navbar-toggle
+		margin-right: 8px
 	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
 		background: 0 0 !important
 	.navbar-custom
@@ -23,7 +25,6 @@ header
 		z-index: 3;
 		font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif
 		line-height: 1.7
-	.navbar
 		backdrop-filter: blur(10px)
 	.navbar-brand
 		color: #fff !important
@@ -117,3 +118,8 @@ header
 			cursor:pointer
 	.top-active
 		background-image: url('/images/top-active.png')
+	ol,
+	ul,
+	li {
+		list-style: none outside none;
+	}
